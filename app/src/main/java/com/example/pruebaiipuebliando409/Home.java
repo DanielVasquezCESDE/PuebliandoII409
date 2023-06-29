@@ -20,6 +20,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         /*a un botón aquí le lancé uno que cree en lo gráfico o simple, vinculación del botón con java*/
         botonHotel =findViewById(R.id.botonhoteles);
+        botonHotel =findViewById(R.id.botonhoteles);
+        botonHotel =findViewById(R.id.botonhoteles);
         //Tiene que exister para poder dar clic
         //Sobre quién voy a escuchar? Sobre la vista
         botonHotel.setOnClickListener(new View.OnClickListener() {
