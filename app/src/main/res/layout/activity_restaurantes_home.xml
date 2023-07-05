@@ -8,27 +8,27 @@
     tools:context=".RestaurantesHome">
 
     <TextView
-        android:id="@+id/titulohotel"
+        android:id="@+id/titulorest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text="Poner un string"
+        android:textSize="25dp"
+        android:text="@string/titulorestaurantes"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/descriphotel"
+        app:layout_constraintBottom_toTopOf="@id/descriprest"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <TextView
-        android:id="@+id/descriphotel"
+        android:id="@+id/descriprest"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:text="@string/resenarestaurantes"
         android:textColor="@color/black"
         android:textLocale=""
 
-        app:layout_constraintBottom_toTopOf="@id/logohotel"
+        app:layout_constraintBottom_toTopOf="@id/logorest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <ImageView
-        android:id="@+id/logohotel"
+        android:id="@+id/logorest"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:src="@drawable/logorestaurante"
@@ -54,12 +54,12 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="168dp"
         android:background="@color/teal"
-        android:text="Usar string"
+        android:text="@string/botonrestaurante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logohotel"
+        app:layout_constraintTop_toBottomOf="@id/logorest"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

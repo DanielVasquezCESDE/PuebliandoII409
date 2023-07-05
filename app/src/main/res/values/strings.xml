@@ -7,10 +7,17 @@
         Si vas de paso por la Fundadora de pueblos, enterate que los hospedajes campestres son de las opciones que más destacan. Puedes alquilar por horas, amanecidas y por semanas desde mucho menos que lo te cuesta un plan en
         hotel de lugares lejanos. No hay reparo con la vista, pues la panorámica del municioio resulta de encanto...
     </string>
+    <string name="botonhotel">HOTELES</string>
+    <string name="titulorestaurantes">Como que está dando filo, ¿no?
+    </string>
     <string name="resenarestaurantes">
             En Copa la comida antioqueña no queda en bajo. Arrima donde Aide para probar un rico mondongo completo, o pasáte en carro por el paradero
         de Santa Rosa y te armás el buffet más paisa que ¡Avemaría!. Eso sí, ya sea en la autopista o en cualquier restaurante te va a alcanzar para
         esa mazamorra con sabor ahumado. Tengalo por seguro, que donde comen uno, comen dos y queda para tres por si no se repiten los cuatro.
+    </string>
+    <string name="botonrestaurante">RESTAURANTES</string>
+    <string name="titulositios">
+        ¿Pa\' dónde va a coger hoy?
     </string>
     <string name="resenasitios">
         Este es un municipio que mezcla de manera armónica su riqueza natural, en el parque de Piedras Blancas que comparte con Guarne, y su valor histórico,
@@ -18,6 +25,8 @@
         el 8 de septiembre de 1541. A cuarenta minutos de Medellín, con vía de acceso en buenas condiciones y muchas fincas de recreo para quienes
         buscan tierra caliente cerca de la capital antioqueña
     </string>
+    <string name="botonsitios">SITIOS TURÍSTICOS</string>
+
     <string name="Opcion1">Español</string>
     <string name="Opcion2">Inglés</string>
     <string name="Opcion3">Portugués</string>

@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgreen"
+    android:background="@drawable/fondohomeplantas"
     tools:context=".Home">
+
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="196dp"
         android:layout_height="103dp"
-        android:src="@drawable/mapaciudad"
+        android:src="@drawable/icconohome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,13 +20,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
 
-    <TextView
+    <ImageView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Copacabana"
-        android:textSize="22dp"
-        android:textStyle="bold"
+        android:src="@drawable/Copacabana"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/cadetblue"
-        android:text="Hoteles"
+        android:text="@string/botonhotel"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/cadetblue"
-        android:text="Restaurantes"
+        android:text="@string/botonrestaurante"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/cadetblue"
-        android:text="Sitios"
+        android:text="@string/botonsitios"
 
         android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
