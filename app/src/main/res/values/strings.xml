@@ -1,7 +1,25 @@
 <resources>
     <string name="app_name">PruebaIIPuebliando409</string>
-    <string name="resenahoteles">
-        Considerando que la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad intrinseca y de los derechos iguales e inalienables de todos los miembros de la familia humana;
-Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado, como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;
+    <string name="titulohoteles">
+        ¡Andáte por las calles pues!
     </string>
+    <string name="resenahoteles">
+        Si vas de paso por la Fundadora de pueblos, enterate que los hospedajes campestres son de las opciones que más destacan. Puedes alquilar por horas, amanecidas y por semanas desde mucho menos que lo te cuesta un plan en
+        hotel de lugares lejanos. No hay reparo con la vista, pues la panorámica del municioio resulta de encanto...
+    </string>
+    <string name="resenarestaurantes">
+            En Copa la comida antioqueña no queda en bajo. Arrima donde Aide para probar un rico mondongo completo, o pasáte en carro por el paradero
+        de Santa Rosa y te armás el buffet más paisa que ¡Avemaría!. Eso sí, ya sea en la autopista o en cualquier restaurante te va a alcanzar para
+        esa mazamorra con sabor ahumado. Tengalo por seguro, que donde comen uno, comen dos y queda para tres por si no se repiten los cuatro.
+    </string>
+    <string name="resenasitios">
+        Este es un municipio que mezcla de manera armónica su riqueza natural, en el parque de Piedras Blancas que comparte con Guarne, y su valor histórico,
+        representado en la iglesia Nuestra Señora de San Juan de la Tasajera, lugar donde se ofició la primera misa católica en el Valle de Aburrá,
+        el 8 de septiembre de 1541. A cuarenta minutos de Medellín, con vía de acceso en buenas condiciones y muchas fincas de recreo para quienes
+        buscan tierra caliente cerca de la capital antioqueña
+    </string>
+    <string name="Opcion1">Español</string>
+    <string name="Opcion2">Inglés</string>
+    <string name="Opcion3">Portugués</string>
+    <string name="Opcion4">Acerca de</string>
 </resources>

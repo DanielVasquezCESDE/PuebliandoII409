@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PruebaIIPuebliando409</string>
-        <string name="resenahoteles">
-        Considerando que la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad intrinseca y de los derechos iguales e inalienables de todos los miembros de la familia humana;
-Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado, como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;
+    <string name="titulohoteles">
+        Go ahead and walk through the streets!
     </string>
+    <string name="resenahoteles">
+        If you happen to pass by La Fundadora de Pueblos, know that countryside accommodations are among the top choices. You can rent them by the hour, overnight,
+        or for weeks, for much less than what a plan in a hotel in faraway places would cost you. There's no need to worry about the view, as the panorama of the municipality is charming...
+    </string>
+    <string name="resenarestaurantes">
+        In Copa, Antioquian food doesn\'t keep in low fire. Come over to Aides place to try a delicious full mondongo, or drive by the Santa Rosa stop and
+        assemble the most paisa buffet you can imagine! And of course, whether its on the highway or at any restaurant, youll have more than
+        enough for that smoky-flavored mazamorra. Rest assured, where one person eats, two can eat, and there's plenty left for three in case
+        the four don't have seconds.
+    </string>
+    <string name="resenasitios">
+        This is a municipality that harmoniously combines its natural wealth, such as the Piedras Blancas Park it shares with Guarne,
+        and its historical value, represented by the Nuestra Señora de San Juan de la Tasajera Church,
+        the place where the first Catholic Mass was officiated in the Valle de Aburrá on September 8, 1541. Located forty minutes away from Medellín,
+        with good road access and many country estates for those seeking warm weather near the capital of Antioquia
+    </string>
+
+    <string name="Opcion1">Spanish</string>
+    <string name="Opcion2">English</string>
+    <string name="Opcion3">Portuguese</string>
+    <string name="Opcion4">About us</string>
 </resources>

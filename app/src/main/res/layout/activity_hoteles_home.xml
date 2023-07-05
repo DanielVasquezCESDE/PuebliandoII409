@@ -11,8 +11,8 @@
       android:id="@+id/titulohotel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:textSize="30dp"
-      android:text="¡Andáte por las calles pues!"
+      android:textSize="25dp"
+      android:text="@string/titulohoteles"
 
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toTopOf="@id/descriphotel"
