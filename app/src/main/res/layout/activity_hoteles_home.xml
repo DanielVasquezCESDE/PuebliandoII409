@@ -41,13 +41,13 @@
 
   <ImageView
       android:id="@+id/logohotel"
-      android:layout_width="85dp"
-      android:layout_height="85dp"
+      android:layout_width="98dp"
+      android:layout_height="112dp"
       android:src="@drawable/hotel"
 
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.469"
+      app:layout_constraintHorizontal_bias="0.143"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
       android:layout_height="wrap_content"
       android:layout_marginHorizontal="20dp"
       android:layout_marginBottom="168dp"
-      android:background="@color/teal"
+      android:background="@drawable/borderhoteles"
       android:text="@string/botonhotel"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -65,6 +65,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/logohotel"
       app:layout_constraintVertical_bias="1.0" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
