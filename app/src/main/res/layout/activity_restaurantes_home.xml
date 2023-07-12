@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondorestaurantes"
+    android:background="@drawable/fondoresta"
     tools:context=".RestaurantesHome">
 
     <TextView
         android:id="@+id/titulorest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titulorestaurantes"
-        android:textColor="@color/gray"
         android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/titulorestaurantes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="32dp"
         android:textStyle="bold"
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/descriprest"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
 
     <TextView
         android:id="@+id/descriprest"
@@ -29,26 +31,27 @@
         android:layout_height="200dp"
         android:text="@string/resenarestaurantes"
         android:textColor="@color/black"
-        android:textLocale=""
+        android:textSize="19dp"
 
         app:layout_constraintBottom_toTopOf="@id/logorest"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintVertical_bias="0.872" />
 
     <ImageView
         android:id="@+id/logorest"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
+        android:layout_width="162dp"
+        android:layout_height="196dp"
         android:src="@drawable/logorestaurante"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.652" />
 
     <Button
         android:id="@+id/botonvermas"
@@ -56,13 +59,13 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="168dp"
-        android:background="@color/teal"
+        android:background="@drawable/borderrest"
         android:text="@string/botonrestaurante"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logorest"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
