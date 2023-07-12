@@ -3,6 +3,8 @@ package com.example.pruebaiipuebliando409;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.LabeledIntent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
@@ -73,16 +75,14 @@ public class Home extends AppCompatActivity {
         int itemSeleccionado = itemsjava.getItemId();
         switch (itemSeleccionado) {
             case(R.id.Op1Esp):
-                Toast.makeText(this, "Quiero que esté en español", Toast.LENGTH_SHORT).show();
                 break;
             case(R.id.Op2Eng):
-                Toast.makeText(this, "Quiero que esté en inglés", Toast.LENGTH_SHORT).show();
                 break;
             case(R.id.Op3Por):
-                Toast.makeText(this, "Quiero que esté en portugués", Toast.LENGTH_SHORT).show();
                 break;
             case(R.id.About):
-                Toast.makeText(this, "Quiero ir a About Us", Toast.LENGTH_SHORT).show();
+                Intent intentAboutUs = new Intent(Home.this,AboutUs.class);
+                startActivity(intentAboutUs);
                 break;
         }
         //CAda que detecta que se le da clic devuelve un verdadero
