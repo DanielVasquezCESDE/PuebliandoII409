@@ -25,4 +25,6 @@
     <string name="Opcion2">Inglés</string>
     <string name="Opcion3">Portugués</string>
     <string name="Opcion4">Acerca de</string>
+
+    <string name="botonlogin">Ingresar</string>
 </resources>

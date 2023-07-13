@@ -32,4 +32,6 @@
     <string name="Opcion2">English</string>
     <string name="Opcion3">Portuguese</string>
     <string name="Opcion4">About us</string>
+
+    <string name="botonlogin">Log in</string>
 </resources>

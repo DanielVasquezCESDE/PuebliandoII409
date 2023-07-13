@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //Para lanzar una actividad desde otra://
-                Intent intent = new Intent(MainActivity.this,Home.class);
+                Intent intent = new Intent(MainActivity.this,Login.class);
                 startActivity(intent);
             }
         };
