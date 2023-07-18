@@ -30,5 +30,8 @@
     <string name="Opcion3">Português</string>
     <string name="Opcion4">Sobre</string>
 
+    <string name="formulariouser">Nome de usuario</string>
+    <string name="formulariokeyword">Senha</string>
+
     <string name="botonlogin">Metete</string>
 </resources>

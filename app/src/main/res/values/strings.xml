@@ -26,5 +26,8 @@
     <string name="Opcion3">Portugués</string>
     <string name="Opcion4">Acerca de</string>
 
+    <string name="formulariouser">Usuario</string>
+    <string name="formulariokeyword">Contraseña</string>
+
     <string name="botonlogin">Ingresar</string>
 </resources>

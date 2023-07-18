@@ -4,31 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondologin"
+    android:background="@drawable/fondodellogin"
     tools:context=".Login">
 
     <ImageView
         android:id="@+id/logologin"
-        android:layout_width="98dp"
-        android:layout_height="112dp"
-        android:src="@drawable/hotel"
+        android:layout_width="226dp"
+        android:layout_height="200dp"
+        android:src="@drawable/loginestesisi"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <EditText
         android:id="@+id/clavecaja"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="312dp"
         android:hint="CONTRASEÑA"
         android:inputType="numberPassword"
         android:textColor="@color/black"
         android:textSize="17dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,24 +37,25 @@
 
     <EditText
         android:id="@+id/usuariocaja"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="USUARIO"
         android:inputType="number"
         android:textColor="@color/black"
         android:textSize="17dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
+        app:layout_constraintVertical_bias="0.39" />
 
     <ImageView
         android:id="@+id/iconoFacebook"
         android:layout_width="98dp"
         android:layout_height="112dp"
-        android:src="@drawable/logoface"
+        android:src="@drawable/logofaceboo"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +68,7 @@
         android:id="@+id/iconoGmail"
         android:layout_width="98dp"
         android:layout_height="112dp"
-        android:src="@drawable/logogmail"
+        android:src="@drawable/logogmaiil"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +81,7 @@
         android:id="@+id/iconoGitHub"
         android:layout_width="98dp"
         android:layout_height="112dp"
-        android:src="@drawable/logogit"
+        android:src="@drawable/logogithub"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.775"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logohotel"
+        app:layout_constraintTop_toBottomOf="@id/iconoGitHub"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
