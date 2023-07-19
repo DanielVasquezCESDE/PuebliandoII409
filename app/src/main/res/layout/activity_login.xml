@@ -9,16 +9,15 @@
 
     <ImageView
         android:id="@+id/logologin"
-        android:layout_width="226dp"
-        android:layout_height="200dp"
+        android:layout_width="249dp"
+        android:layout_height="234dp"
         android:src="@drawable/loginestesisi"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <EditText
         android:id="@+id/clavecaja"
@@ -28,7 +27,7 @@
         android:hint="CONTRASEÑA"
         android:inputType="numberPassword"
         android:textColor="@color/black"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -40,9 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="USUARIO"
-        android:inputType="number"
+        android:inputType="text"
         android:textColor="@color/black"
-        android:textSize="17dp"
+        android:textSize="22dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,8 +65,8 @@
 
     <ImageView
         android:id="@+id/iconoGmail"
-        android:layout_width="98dp"
-        android:layout_height="112dp"
+        android:layout_width="109dp"
+        android:layout_height="125dp"
         android:src="@drawable/logogmaiil"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,16 +78,16 @@
 
     <ImageView
         android:id="@+id/iconoGitHub"
-        android:layout_width="98dp"
-        android:layout_height="112dp"
+        android:layout_width="111dp"
+        android:layout_height="121dp"
         android:src="@drawable/logogithub"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintVertical_bias="0.608" />
 
     <Button
         android:id="@+id/botonlogueo"
@@ -96,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="100dp"
-        android:background="@drawable/borderhoteles"
+        android:background="@drawable/borderlogin"
         android:text="@string/botonlogin"
         android:textColor="@color/black"
         android:textSize="25dp"

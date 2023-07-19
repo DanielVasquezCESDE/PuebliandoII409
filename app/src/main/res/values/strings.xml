@@ -30,4 +30,6 @@
     <string name="formulariokeyword">Contraseña</string>
 
     <string name="botonlogin">Ingresar</string>
+
+    <string name="bienvenidoc">Buenas de nuevo,</string>
 </resources>

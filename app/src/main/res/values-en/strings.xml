@@ -37,4 +37,6 @@
     <string name="formulariokeyword">Password</string>
 
     <string name="botonlogin">Log in</string>
+
+    <string name="bienvenidoc">Welcome back</string>
 </resources>

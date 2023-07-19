@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -22,14 +23,26 @@ public class Home extends AppCompatActivity {
     Button botonRestaurant;
     Button botonTourism;
 
+    TextView nombleCli;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        /*a un botón aquí le lancé uno que cree en lo gráfico o simple, vinculación del botón con java*/
+
+        //Con el getStringExtra se le dice que se va a traer un PutExtra, es decir se trae el valor o dato de otra actividad,
+        String nombre = getIntent().getStringExtra("Usuarionombre");
+
+
+        /*Lo creado en lo gráfico o simple, vinculación del botón con java*/
         botonHotel =findViewById(R.id.botonhoteles);
         botonRestaurant =findViewById(R.id.botonrestaurantes);
         botonTourism =findViewById(R.id.botonsitios);
+        nombleCli = findViewById(R.id.clientecito);
+
+        //Se une putExtra con el TextView de usuario
+        nombleCli.setText(nombre);
+
         //Tiene que exister para poder dar clic
         //Sobre quién voy a escuchar? Sobre la vista
 
