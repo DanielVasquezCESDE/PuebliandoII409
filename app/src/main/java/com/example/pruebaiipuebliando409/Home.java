@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.content.pm.LabeledIntent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.LocaleList;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -75,8 +76,20 @@ public class Home extends AppCompatActivity {
 
     }
 
-    //Para inflar o hacer aparecer menú
+    public void cambiarIdioma(String idioma) {
+        //Set phone's language by default:
+        Locale language = new Locale(idioma);
+        Locale.setDefault(language);
 
+        //Configuramos de manera global el dispositivo, primero se busca entre los recursos del teléfono:
+        Configuration ConfigTel = getResources().getConfiguration();
+        ConfigTel.locale = language;
+
+        //Se ejecuta la configuración:
+        getBaseContext().getResources().updateConfiguration(ConfigTel,getBaseContext().getResources().getDisplayMetrics());
+    }
+
+    //Para inflar o hacer aparecer menú
     public boolean onCreateOptionsMenu(Menu menujava){
         getMenuInflater().inflate(R.menu.menuidiomas,menujava);
         return true;
@@ -88,10 +101,22 @@ public class Home extends AppCompatActivity {
         int itemSeleccionado = itemsjava.getItemId();
         switch (itemSeleccionado) {
             case(R.id.Op1Esp):
+                this.cambiarIdioma("es");
+                //Quiero refrescar, lo que quiere decir que quiero estar en el mismo Home, pero del otro idioma:
+                Intent intentSpanish = new Intent(Home.this,Home.class);
+                startActivity(intentSpanish);
                 break;
             case(R.id.Op2Eng):
+                this.cambiarIdioma("en");
+                //Quiero refrescar, lo que quiere decir que quiero estar en el mismo Home, pero del otro idioma:
+                Intent intentIngles = new Intent(Home.this,Home.class);
+                startActivity(intentIngles);
                 break;
             case(R.id.Op3Por):
+                this.cambiarIdioma("pt");
+                //Quiero refrescar, lo que quiere decir que quiero estar en el mismo Home, pero del otro idioma:
+                Intent intentPortguese = new Intent(Home.this,Home.class);
+                startActivity(intentPortguese);
                 break;
             case(R.id.About):
                 Intent intentAboutUs = new Intent(Home.this,AboutUs.class);
