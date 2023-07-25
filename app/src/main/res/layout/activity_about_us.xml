@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoperfil"
     tools:context=".AboutUs">
 
     <TextView
@@ -12,8 +13,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Vasquez Jaramillo"
-        android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:textSize="38dp"
         android:textStyle="bold"
 
 
@@ -30,8 +31,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Daniel"
-        android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:textSize="38dp"
         android:textStyle="bold"
 
 
@@ -42,53 +43,55 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
 
+
     <ImageView
         android:id="@+id/perfildesarrolla"
-        android:layout_width="133dp"
-        android:layout_height="266dp"
-        android:src="@drawable/fotoperfil"
+        android:layout_width="172dp"
+        android:layout_height="276dp"
+        android:src="@drawable/perfildanieleste"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/reseniadesarrolla"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Daniel"
-        android:textColor="@color/black"
-        android:textSize="35dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/reseniaperfil"
+        android:textColor="@color/white"
+        android:textSize="18dp"
         android:textStyle="bold"
+        android:textAlignment="center"
 
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/correodesarrolla"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/correodesarrolla"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/reseniaperfil"
-        android:textColor="@color/black"
+        android:text="dvasquezja@cesde.net"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_bias="0.818"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintVertical_bias="0.687" />
 
     <TextView
         android:id="@+id/usuariogithub"
@@ -96,7 +99,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="https://github.com/DanielVasquezCESDE"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
         android:textAlignment="center"
