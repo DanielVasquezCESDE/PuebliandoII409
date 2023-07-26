@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoperfil"
+    android:background="@drawable/fondo2perfil"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
     tools:context=".AboutUs">
 
     <TextView
@@ -13,8 +17,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Vasquez Jaramillo"
-        android:textColor="@color/white"
-        android:textSize="38dp"
+        android:textColor="@color/burlywood"
+        android:textSize="42dp"
         android:textStyle="bold"
 
 
@@ -31,8 +35,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Daniel"
-        android:textColor="@color/white"
-        android:textSize="38dp"
+        android:textColor="@color/burlywood"
+        android:textSize="42dp"
         android:textStyle="bold"
 
 
@@ -54,62 +58,63 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintVertical_bias="0.441" />
 
     <TextView
         android:id="@+id/reseniadesarrolla"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-thin"
         android:text="@string/reseniaperfil"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textAlignment="center"
 
 
         app:layout_constraintBottom_toTopOf="@id/correodesarrolla"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.919" />
 
     <TextView
         android:id="@+id/correodesarrolla"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="dvasquezja@cesde.net"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:textStyle="bold"
+        android:textStyle="italic"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.808" />
 
     <TextView
         android:id="@+id/usuariogithub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="82dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="https://github.com/DanielVasquezCESDE"
-        android:textColor="@color/white"
-        android:textSize="35dp"
-        android:textStyle="bold"
         android:textAlignment="center"
+        android:textColor="@color/bisque"
+        android:textSize="17dp"
+        android:textStyle="bold"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        app:layout_constraintVertical_bias="0.998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

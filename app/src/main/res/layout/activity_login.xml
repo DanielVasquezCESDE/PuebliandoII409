@@ -54,7 +54,7 @@
         android:id="@+id/iconoFacebook"
         android:layout_width="98dp"
         android:layout_height="112dp"
-        android:src="@drawable/logofaceboo"
+        android:src="@drawable/dfacebooklogo"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,9 +65,9 @@
 
     <ImageView
         android:id="@+id/iconoGmail"
-        android:layout_width="109dp"
-        android:layout_height="125dp"
-        android:src="@drawable/logogmaiil"
+        android:layout_width="100dp"
+        android:layout_height="109dp"
+        android:src="@drawable/gmailogo"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
         android:id="@+id/iconoGitHub"
         android:layout_width="111dp"
         android:layout_height="121dp"
-        android:src="@drawable/logogithub"
+        android:src="@drawable/github"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +97,7 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/borderlogin"
         android:text="@string/botonlogin"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
