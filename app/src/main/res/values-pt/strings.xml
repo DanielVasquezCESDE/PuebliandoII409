@@ -40,4 +40,8 @@
     <string name="reseniaperfil">Jovem estudante de desenvolvimento de software, com bom domínio do inglês, motivado e proativo. Tenho experiência em processos produtivos, o que me permitiu lidar com ambientes desafiadores e desenvolver habilidades de liderança ao trabalhar em equipe. Tenho interesse em causas sociais e estou em busca de aprofundar meus estudos em química para a indústria. Vamos juntos fazer a diferença de forma positiva!</string>
     <string name="contacto">Contacto</string>
 
+    <string name="nombresitio">Nombre</string>
+    <string name="encargadositio">Persona encargada</string>
+    <string name="telsitio">Contacto</string>
+    <string name="desdesitio">Desde</string>
 </resources>

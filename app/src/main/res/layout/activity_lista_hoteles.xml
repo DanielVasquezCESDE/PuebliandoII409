@@ -6,77 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ListaHoteles">
 
-    <ImageView
-        android:id="@+id/imagenhotel1"
-        android:layout_width="413dp"
-        android:layout_height="322dp"
-
-        android:scaleType="fitXY"
-        android:src="@drawable/hotel1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/nombrehotel1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="Monte horeb a 10 minutos de Medellin."
-        android:textSize="18dp"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagenhotel1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/preciohotel1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="COP 880.000"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/imagenhotel1"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/contactohotel1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:text="@string/contacto"
-        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/numerocontacto"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/preciohotel1"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.5"/>
 
-    <TextView
-        android:id="@+id/numerocontacto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="3005066692"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toEndOf="@id/contactohotel1"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
