@@ -27,6 +27,7 @@
 
         android:text="Monte horeb a 10 minutos de Medellin."
         android:textSize="18dp"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,10 +46,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="@id/imagenhotel1"
         app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/contactohotel1"
@@ -60,14 +61,14 @@
         android:text="@string/contacto"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/numerocontacto"
+        app:layout_constraintEnd_toStartOf="@id/numerocontactoHotel"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/preciohotel1"
         app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
-        android:id="@+id/numerocontacto"
+        android:id="@+id/numerocontactoHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -78,6 +79,6 @@
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toEndOf="@id/contactohotel1"
         app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.027" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
