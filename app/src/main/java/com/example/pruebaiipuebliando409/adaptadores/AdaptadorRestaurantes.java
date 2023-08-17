@@ -3,6 +3,8 @@ package com.example.pruebaiipuebliando409.adaptadores;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,8 +42,28 @@ public class AdaptadorRestaurantes extends RecyclerView.Adapter<AdaptadorRestaur
         return listaRestaurantes.size();
     }
 
-    public class viewHolder {
-        public viewHolder(View vista) {
+    public class viewHolder extends RecyclerView.ViewHolder {
+        TextView nombreRestaurante;
+        ImageView fotoRestaurante;
+                TextView precioRestaurante;
+        TextView contactoRestaurante;
+                        TextView platoRestaurante;
+
+        public viewHolder(@NonNull View itemView) {
+            super(itemView);
+            nombreRestaurante = itemView.findViewById(R.id.nombreresta1);
+            fotoRestaurante = itemView.findViewById(R.id.imagenresta1);
+            precioRestaurante = itemView.findViewById(R.id.precios);
+            contactoRestaurante = itemView.findViewById(R.id.numeroresta);
+            platoRestaurante = itemView.findViewById(R.id.platorecom);
+        }
+
+        public void actualizarDatos(MoldeRestaurante moldeRestaurante) {
+            nombreRestaurante.setText(moldeRestaurante.getNombreR());
+            fotoRestaurante.setImageResource(moldeRestaurante.getFotoR());
+            precioRestaurante.setText((moldeRestaurante.getPrecioR()));
+            contactoRestaurante.setText(moldeRestaurante.getContactoR());
+            platoRestaurante.setText(moldeRestaurante.getPlato());
         }
     }
 }
