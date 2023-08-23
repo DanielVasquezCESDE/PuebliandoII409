@@ -50,7 +50,7 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
     @Override
     // Este método se llama cuando es necesario mostrar datos en un elemento específico
     public void onBindViewHolder(@NonNull AdaptadorHoteles.viewHolder holder, int position) {
-        //A cada molde llevele la info del elemento de la lista
+        //A cada molde llevele la info del elemento de la lista (copia de un elemento gráfico)
         holder.actualizarDatos(listaHoteles.get(position));
     }
 

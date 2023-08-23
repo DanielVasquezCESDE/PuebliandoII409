@@ -9,7 +9,7 @@ public class MoldeHotel {
     public MoldeHotel() { //Constructor vacío
 
     }
-
+//Esto es un constructor, pilas en el órden
     public MoldeHotel(String nombre, String precio, String tel, Integer foto) {
         this.nombre = nombre;
         this.precio = precio;
