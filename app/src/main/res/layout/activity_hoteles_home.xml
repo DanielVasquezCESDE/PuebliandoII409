@@ -17,6 +17,7 @@
       android:fontFamily="sans-serif-condensed-medium"
       android:textSize="35dp"
       android:textStyle="bold"
+      android:textAlignment="center"
 
 
       app:layout_constraintBottom_toTopOf="@id/descriphotel"

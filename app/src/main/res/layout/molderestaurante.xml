@@ -8,100 +8,131 @@
     <TextView
         android:id="@+id/nombreresta1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="140dp"
 
+        android:background="@color/navajowhite"
+        android:paddingTop="39dp"
         android:text="Fonda restaurante DONDE AIDE"
         android:textAlignment="center"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@id/imagenresta1"
+        android:textSize="40dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imagenresta1"
         android:layout_width="413dp"
         android:layout_height="322dp"
 
+        android:layout_marginBottom="240dp"
         android:scaleType="fitXY"
         android:src="@drawable/resta1"
-        app:layout_constraintBottom_toTopOf="@id/rangoprecio"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombreresta1" />
+        app:layout_constraintTop_toBottomOf="@id/nombreresta1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/rangoprecio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
 
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Rango precio:"
         android:textSize="14dp"
         android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:background="@color/aliceblue"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagenresta1" />
+        app:layout_constraintTop_toBottomOf="@id/imagenresta1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/precios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="159dp"
+        android:layout_height="47dp"
 
-        app:layout_constraintStart_toEndOf="@id/rangoprecio"
-        app:layout_constraintTop_toBottomOf="@id/imagenresta1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:text="Desde COP 26000"
         android:textSize="14dp"
-/>
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:background="@color/aliceblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toEndOf="@id/rangoprecio"
+        app:layout_constraintTop_toBottomOf="@id/imagenresta1"
+        app:layout_constraintVertical_bias="0.049" />
+
 
     <TextView
         android:id="@+id/contactos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="174dp"
+        android:layout_height="47dp"
 
         android:text="Teléfonos:"
         android:textSize="14dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:background="@color/aliceblue"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rangoprecio"
-        app:layout_constraintEnd_toStartOf="@id/numeroresta"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/numeroresta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
 
-        android:layout_marginStart="116dp"
+        android:layout_marginEnd="56dp"
         android:text="3116026852"
         android:textSize="14dp"
+        android:textAlignment="center"
+        android:paddingTop="14dp"
+        android:background="@color/aliceblue"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/contactos"
-        app:layout_constraintTop_toBottomOf="@id/precios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precios"
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
         android:id="@+id/platorecom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
 
-        android:layout_marginStart="116dp"
+        android:background="@color/aliceblue"
+        android:paddingTop="14dp"
+        android:paddingStart="20dp"
         android:text="Plato recomendado:"
-        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@id/contactos"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.141" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
