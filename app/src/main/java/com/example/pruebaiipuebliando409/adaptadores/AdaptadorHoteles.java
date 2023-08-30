@@ -1,5 +1,6 @@
 package com.example.pruebaiipuebliando409.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.pruebaiipuebliando409.AmpliadoHotel;
 import com.example.pruebaiipuebliando409.R;
 import com.example.pruebaiipuebliando409.moldes.MoldeHotel;
 
@@ -81,6 +83,15 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText((moldeHotel.getPrecio()));
             contactoHotel.setText(moldeHotel.getTel());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentAmpliar = new Intent(itemView.getContext(), AmpliadoHotel.class);
+                    //No se inicializa de una vez el método startactivity porque se debe especificar que no es la actividad entera de adaptador la que pasa a otra actividad. Si no que se especifica qué itemview fue seleccionado y a partir de ahí se pasa a la actividad ampliado_hotel
+                    itemView.getContext().startActivity(intentAmpliar);
+                }
+            });
         }
     }
 }

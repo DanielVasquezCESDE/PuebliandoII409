@@ -1,138 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/nombreresta1"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        android:background="@color/navajowhite"
-        android:paddingTop="39dp"
-        android:text="Fonda restaurante DONDE AIDE"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textStyle="bold"
+        <TextView
+            android:id="@+id/nombreresta1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+            android:background="@color/navajowhite"
+            android:paddingTop="39dp"
+            android:text="Fonda restaurante DONDE AIDE"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
 
-    <ImageView
-        android:id="@+id/imagenresta1"
-        android:layout_width="413dp"
-        android:layout_height="322dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-        android:layout_marginBottom="240dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/resta1"
+        <ImageView
+            android:id="@+id/imagenresta1"
+            android:layout_width="413dp"
+            android:layout_height="322dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombreresta1"
-        app:layout_constraintVertical_bias="0.0" />
+            android:layout_marginBottom="240dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/resta1"
 
-    <TextView
-        android:id="@+id/rangoprecio"
-        android:layout_width="181dp"
-        android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombreresta1"
+            app:layout_constraintVertical_bias="0.0" />
 
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="Rango precio:"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:paddingTop="14dp"
-        android:background="@color/aliceblue"
+        <TextView
+            android:id="@+id/rangoprecio"
+            android:layout_width="181dp"
+            android:layout_height="50dp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagenresta1"
-        app:layout_constraintVertical_bias="0.0" />
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Rango precio:"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:background="@color/aliceblue"
 
-    <TextView
-        android:id="@+id/precios"
-        android:layout_width="159dp"
-        android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagenresta1"
+            app:layout_constraintVertical_bias="0.0" />
 
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:text="Desde COP 26000"
-        android:textSize="14dp"
-        android:textAlignment="center"
-        android:paddingTop="14dp"
-        android:background="@color/aliceblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toEndOf="@id/rangoprecio"
-        app:layout_constraintTop_toBottomOf="@id/imagenresta1"
-        app:layout_constraintVertical_bias="0.049" />
+        <TextView
+            android:id="@+id/precios"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
 
-
-    <TextView
-        android:id="@+id/contactos"
-        android:layout_width="174dp"
-        android:layout_height="47dp"
-
-        android:text="Teléfonos:"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:paddingTop="14dp"
-        android:background="@color/aliceblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rangoprecio"
-        app:layout_constraintVertical_bias="0.103" />
-
-    <TextView
-        android:id="@+id/numeroresta"
-        android:layout_width="137dp"
-        android:layout_height="43dp"
-
-        android:layout_marginEnd="56dp"
-        android:text="3116026852"
-        android:textSize="14dp"
-        android:textAlignment="center"
-        android:paddingTop="14dp"
-        android:background="@color/aliceblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precios"
-        app:layout_constraintVertical_bias="0.101" />
-
-    <TextView
-        android:id="@+id/platorecom"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-
-        android:background="@color/aliceblue"
-        android:paddingTop="14dp"
-        android:paddingStart="20dp"
-        android:text="Plato recomendado:"
-        android:textAlignment="center"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@id/contactos"
-        app:layout_constraintVertical_bias="0.141" />
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Desde COP 26000"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:background="@color/aliceblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.755"
+            app:layout_constraintStart_toEndOf="@id/rangoprecio"
+            app:layout_constraintTop_toBottomOf="@id/imagenresta1"
+            app:layout_constraintVertical_bias="0.049" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/contactos"
+            android:layout_width="174dp"
+            android:layout_height="47dp"
+
+            android:text="Teléfonos:"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:background="@color/aliceblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rangoprecio"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <TextView
+            android:id="@+id/numeroresta"
+            android:layout_width="137dp"
+            android:layout_height="43dp"
+
+            android:layout_marginEnd="56dp"
+            android:text="3116026852"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:background="@color/aliceblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/precios"
+            app:layout_constraintVertical_bias="0.101" />
+
+        <TextView
+            android:id="@+id/platorecom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@color/aliceblue"
+            android:paddingTop="14dp"
+            android:paddingStart="20dp"
+            android:text="Plato recomendado:"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/contactos"
+            app:layout_constraintVertical_bias="0.141" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

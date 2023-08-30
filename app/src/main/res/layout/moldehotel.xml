@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ListaHoteles">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ListaHoteles">
 
 
-    <ImageView
-        android:id="@+id/imagenhotel1"
-        android:layout_width="413dp"
-        android:layout_height="322dp"
+<ImageView
+    android:id="@+id/imagenhotel1"
+    android:layout_width="413dp"
+    android:layout_height="322dp"
 
-        android:scaleType="fitXY"
-        android:src="@drawable/hotel1"
-        app:layout_constraintBottom_toTopOf="@+id/nombrehotel1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    android:scaleType="fitXY"
+    android:src="@drawable/hotel1"
+    app:layout_constraintBottom_toTopOf="@+id/nombrehotel1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/nombrehotel1"
@@ -35,84 +46,86 @@
 
         app:layout_constraintBottom_toTopOf="@id/contactohotel1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.455" />
 
-
     <TextView
-        android:id="@+id/preciohotel1"
-        android:layout_width="170dp"
-        android:layout_height="49dp"
+    android:id="@+id/preciohotel1"
+    android:layout_width="170dp"
+    android:layout_height="49dp"
 
-        android:background="#21AC9F"
-        android:paddingTop="15dp"
-        android:text="COP 880.000"
-        android:textAlignment="center"
-        android:textSize="14dp"
-        android:textStyle="bold"
+    android:background="#21AC9F"
+    android:paddingTop="15dp"
+    android:text="COP 880.000"
+    android:textAlignment="center"
+    android:textSize="14dp"
+    android:textStyle="bold"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.002" />
-    <!--app:layout_constraintBottom_toTopOf="@+id/espaceador"-->
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
+    app:layout_constraintVertical_bias="0.002" />
+<!--app:layout_constraintBottom_toTopOf="@+id/espaceador"-->
 
 
-    <TextView
-        android:id="@+id/contactohotel1"
-        android:layout_width="88dp"
-        android:layout_height="49dp"
+<TextView
+    android:id="@+id/contactohotel1"
+    android:layout_width="88dp"
+    android:layout_height="49dp"
 
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:background="#44C3B7"
-        android:paddingTop="15dp"
-        android:text="@string/contacto"
-        android:textAlignment="center"
-        android:textSize="14dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="#44C3B7"
+    android:paddingTop="15dp"
+    android:text="@string/contacto"
+    android:textAlignment="center"
+    android:textSize="14dp"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.002" />
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.527"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
+    app:layout_constraintVertical_bias="0.002" />
 <!--        app:layout_constraintBottom_toTopOf="@+id/espaceador"-->
 
 
-    <TextView
-        android:id="@+id/numerocontactoHotel"
-        android:layout_width="153dp"
-        android:layout_height="49dp"
+<TextView
+    android:id="@+id/numerocontactoHotel"
+    android:layout_width="153dp"
+    android:layout_height="49dp"
 
-        android:layout_marginBottom="336dp"
-        android:background="#89E4DC"
-        android:paddingTop="15dp"
-        android:text="3005066692"
-        android:textAlignment="center"
-        android:textSize="14dp"
+    android:layout_marginBottom="336dp"
+    android:background="#89E4DC"
+    android:paddingTop="15dp"
+    android:text="3005066692"
+    android:textAlignment="center"
+    android:textSize="14dp"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
-        app:layout_constraintVertical_bias="0.0" />
-    <!--        app:layout_constraintBottom_toTopOf="@+id/espaceador"-->
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/nombrehotel1"
+    app:layout_constraintVertical_bias="0.0" />
+<!--        app:layout_constraintBottom_toTopOf="@+id/espaceador"-->
 
 
-    <Space
-        android:id="@+id/espaceador"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+<Space
+    android:id="@+id/espaceador"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
 
-        app:layout_constraintBottom_toBottomOf="@id/espaceador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contactohotel1"
-        app:layout_constraintVertical_bias="0.0" />
+    app:layout_constraintBottom_toBottomOf="@id/espaceador"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/contactohotel1"
+    app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
