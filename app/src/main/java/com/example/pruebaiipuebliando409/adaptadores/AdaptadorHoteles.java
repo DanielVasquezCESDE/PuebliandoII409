@@ -88,6 +88,7 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
                 @Override
                 public void onClick(View v) {
                     Intent intentAmpliar = new Intent(itemView.getContext(), AmpliadoHotel.class);
+                    intentAmpliar.putExtra("datoshotel", moldeHotel);
                     //No se inicializa de una vez el método startactivity porque se debe especificar que no es la actividad entera de adaptador la que pasa a otra actividad. Si no que se especifica qué itemview fue seleccionado y a partir de ahí se pasa a la actividad ampliado_hotel
                     itemView.getContext().startActivity(intentAmpliar);
                 }

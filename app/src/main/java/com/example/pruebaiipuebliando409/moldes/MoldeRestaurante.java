@@ -1,21 +1,25 @@
 package com.example.pruebaiipuebliando409.moldes;
 
-public class MoldeRestaurante {
+import java.io.Serializable;
+
+public class MoldeRestaurante implements Serializable {
     private String nombreR;
     private Integer fotoR;
     private String precioR;
     private String contactoR;
     private String plato;
+    private String descripR;
 
     public MoldeRestaurante() {
     }
 
-    public MoldeRestaurante(String nombreR, Integer fotoR, String precioR, String contactoR, String plato) {
+    public MoldeRestaurante(String nombreR, Integer fotoR, String precioR, String contactoR, String plato, String descripR) {
         this.nombreR = nombreR;
         this.fotoR = fotoR;
         this.precioR = precioR;
         this.contactoR = contactoR;
         this.plato = plato;
+        this.descripR = descripR;
     }
 
     public String getNombreR() {
@@ -56,5 +60,13 @@ public class MoldeRestaurante {
 
     public void setPlato(String plato) {
         this.plato = plato;
+    }
+
+    public String getDescripR() {
+        return descripR;
+    }
+
+    public void setDescripR(String descripR) {
+        this.descripR = descripR;
     }
 }

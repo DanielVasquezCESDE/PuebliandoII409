@@ -1,6 +1,8 @@
 package com.example.pruebaiipuebliando409.moldes;
 
-public class MoldeSitio {
+import java.io.Serializable;
+
+public class MoldeSitio implements Serializable {
     //Palabra reservada private
     //Atributos: elementos que en el molde gráfico cambian
     private String nombreS;
@@ -8,22 +10,24 @@ public class MoldeSitio {
     private String encargadoS;
     private String contacto;
     private String precioS;
+    private String descripS;
 
     public MoldeSitio() {
     }
 
-    public MoldeSitio(String nombreS, Integer fotoS, String encargadoS, String contacto, String precioS) {
+    public MoldeSitio(String nombreS, Integer fotoS, String encargadoS, String contacto, String precioS, String descripS) {
         this.nombreS = nombreS;
         this.fotoS = fotoS;
         this.encargadoS = encargadoS;
         this.contacto = contacto;
         this.precioS = precioS;
+        this.descripS = descripS;
     }
 
     public String getNombreS() {
         return nombreS;
     }
-//Tipos de retorno: public o public void
+
     public void setNombreS(String nombreS) {
         this.nombreS = nombreS;
     }
@@ -58,5 +62,13 @@ public class MoldeSitio {
 
     public void setPrecioS(String precioS) {
         this.precioS = precioS;
+    }
+
+    public String getDescripS() {
+        return descripS;
+    }
+
+    public void setDescripS(String descripS) {
+        this.descripS = descripS;
     }
 }

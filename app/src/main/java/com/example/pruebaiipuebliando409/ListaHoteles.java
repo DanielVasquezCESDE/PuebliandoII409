@@ -49,10 +49,10 @@ public class ListaHoteles extends AppCompatActivity {
     }
     public void llenarListaConDatos () {
         //Después se a usar info. que venga de la base datos
-        listaHoteles.add(new MoldeHotel("Hotel cabañal La Palma", "$1", "3005068890", R.drawable.hotelcabanialapalma));
-        listaHoteles.add(new MoldeHotel("Hotel Copamar", "$2", "3234543232", R.drawable.hotelcopamar));
-        listaHoteles.add(new MoldeHotel("Hotel Copacabana", "$3", "3234543232", R.drawable.hoteldecopacabana));
-        listaHoteles.add(new MoldeHotel("Hotel LibertGHotel", "$5", "3234543232", R.drawable.hotellibertghotelsspa));
-        listaHoteles.add(new MoldeHotel("Hotel Villa Camila", "$8", "3234543232", R.drawable.hotelvillacamila));
+        listaHoteles.add(new MoldeHotel("Hotel cabañal La Palma", "$1", "3005068890", R.drawable.hotelcabanialapalma, "Experimenta la tranquilidad de la naturaleza en nuestra hacienda con vistas panorámicas a las montañas. Disfruta de habitaciones acogedoras y actividades al aire libre. Ideal para escapadas románticas."));
+        listaHoteles.add(new MoldeHotel("Hotel Copamar", "$2", "3234543232", R.drawable.hotelcopamar, "Sumérgete en la cultura cafetera en esta auténtica finca antioqueña. Rodeada de cafetales, ofrece alojamientos rústicos y recorridos por la plantación. Perfecta para amantes del café y la naturaleza."));
+        listaHoteles.add(new MoldeHotel("Hotel Copacabana", "$3", "3234543232", R.drawable.hoteldecopacabana, "Enclavado en el corazón de un bosque encantado, nuestro hotel boutique ofrece elegantes habitaciones con vista al río. Relájate en el spa o aventúrate en senderos ecológicos. Una experiencia de lujo en la naturaleza."));
+        listaHoteles.add(new MoldeHotel("Hotel LibertGHotel", "$5", "3234543232", R.drawable.hotellibertghotelsspa, "Vive la experiencia de alojarte en cabañas de madera rodeadas de exuberante vegetación. Perfecto para familias o grupos, con actividades como paseos a caballo y fogatas nocturnas. Un refugio acogedor en la montaña."));
+        listaHoteles.add(new MoldeHotel("Hotel Villa Camila", "$8", "3234543232", R.drawable.hotelvillacamila, "Esta posada emana encanto rural en cada rincón. Con jardines floridos y piscina al aire libre, es el lugar ideal para desconectar. Ofrecemos deliciosa comida casera y un ambiente acogedor para toda la familia."));
     }
 }
