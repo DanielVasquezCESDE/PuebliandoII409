@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,8 @@ public class AmpliadoHotel extends AppCompatActivity {
     TextView precioHotelAmpliado;
     TextView telefonoHotelAmpliado;
     TextView descripHotelAmpliado;
+
+    RatingBar valoraHotelAmpliado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class AmpliadoHotel extends AppCompatActivity {
         precioHotelAmpliado = findViewById(R.id.preciohotelampliado);
         telefonoHotelAmpliado = findViewById(R.id.telefonohotelampliado);
         descripHotelAmpliado = findViewById(R.id.descripcionAmpliH);
+        valoraHotelAmpliado = findViewById(R.id.valorahotelampliado);
+
 
         //La clase que mandamos
         moldeDelHotel = (MoldeHotel)getIntent().getSerializableExtra("datoshotel");
@@ -49,5 +54,6 @@ public class AmpliadoHotel extends AppCompatActivity {
         precioHotelAmpliado.setText(moldeDelHotel.getPrecio());
         telefonoHotelAmpliado.setText(moldeDelHotel.getTel());
         descripHotelAmpliado.setText(moldeDelHotel.getDescrip());
+        valoraHotelAmpliado.setRating(moldeDelHotel.getValoraH());
     }
 }

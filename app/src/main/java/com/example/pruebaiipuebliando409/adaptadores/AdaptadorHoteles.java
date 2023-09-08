@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -68,6 +69,7 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
         TextView nombreHotel;
         TextView precioHotel;
         TextView contactoHotel;
+        RatingBar valoracionHotel;
 
         public viewHolder(@NonNull View itemView) {
             //
@@ -76,6 +78,7 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
             precioHotel = itemView.findViewById(R.id.preciohotel1);
             contactoHotel = itemView.findViewById(R.id.numerocontactoHotel);
             fotoHotel = itemView.findViewById(R.id.imagenhotel1);
+            valoracionHotel = itemView.findViewById(R.id.barravaloracionHoteles);
         }
 
         public void actualizarDatos(MoldeHotel moldeHotel) {
@@ -83,6 +86,7 @@ public class AdaptadorHoteles extends /*hereda*/RecyclerView.Adapter<AdaptadorHo
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText((moldeHotel.getPrecio()));
             contactoHotel.setText(moldeHotel.getTel());
+            valoracionHotel.setRating(moldeHotel.getValoraH());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

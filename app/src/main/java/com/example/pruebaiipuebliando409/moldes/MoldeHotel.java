@@ -9,20 +9,25 @@ public class MoldeHotel implements Serializable {
     private Integer foto;
     private String descrip;
 
+    private Float valoraH;
+
     public MoldeHotel() { //Constructor vacío
 
     }
 //Esto es un constructor, pilas en el órden
 
-    public MoldeHotel(String nombre, String precio, String tel, Integer foto, String descrip) {
+    public MoldeHotel(String nombre, String precio, String tel, Integer foto, String descrip, Float valoraH) {
         this.nombre = nombre;
         this.precio = precio;
         this.tel = tel;
         this.foto = foto;
         this.descrip = descrip;
+        this.valoraH = valoraH;
     }
 
+
     //El nombre que llega de la base de datos se le asigna a la tarjeta
+
 
     public String getNombre() {
         return nombre;
@@ -62,5 +67,13 @@ public class MoldeHotel implements Serializable {
 
     public void setDescrip(String descrip) {
         this.descrip = descrip;
+    }
+
+    public Float getValoraH() {
+        return valoraH;
+    }
+
+    public void setValoraH(Float valoraH) {
+        this.valoraH = valoraH;
     }
 }
