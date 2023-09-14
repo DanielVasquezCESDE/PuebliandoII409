@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +21,7 @@ public class AmpliadoResta extends AppCompatActivity {
     TextView nombreRestaAmpliado;
     TextView precioPlatoAmpliado;
     TextView telefonoRestaAmpliado;
-    TextView descripRestaAmpliado;
+    RatingBar valorRestaAmpli;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,8 @@ public class AmpliadoResta extends AppCompatActivity {
         nombreRestaAmpliado = findViewById(R.id.nombreRESTAampliado);
         precioPlatoAmpliado = findViewById(R.id.precioRESTAampliado);
         telefonoRestaAmpliado = findViewById(R.id.telefonoRESTAampliado);
-        descripRestaAmpliado = findViewById(R.id.descripcionAmpliRESTA);
+        valorRestaAmpli = findViewById(R.id.valorRestaAmpli);
+
 
         moldeDelResta = (MoldeRestaurante) getIntent().getSerializableExtra("datosRestaurante");
 
@@ -45,6 +47,6 @@ public class AmpliadoResta extends AppCompatActivity {
         nombreRestaAmpliado.setText(moldeDelResta.getNombreR());
         precioPlatoAmpliado.setText(moldeDelResta.getPrecioR());
         telefonoRestaAmpliado.setText(moldeDelResta.getContactoR());
-        descripRestaAmpliado.setText(moldeDelResta.getDescripR());
+        valorRestaAmpli.setRating(moldeDelResta.getValorR());
     }
 }

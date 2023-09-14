@@ -11,25 +11,27 @@
     android:backgroundTint="@color/lightcyan">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="549dp">
+        android:layout_width="395dp"
+        android:layout_height="384dp">
 
         <TextView
             android:id="@+id/nombreresta1"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_width="381dp"
+            android:layout_height="70dp"
 
-            android:background="@color/navajowhite"
+            android:paddingTop="12dp"
+            android:paddingEnd="30dp"
+
+            android:background="@color/lightcyan"
             android:gravity="center"
-            android:padding="10dp"
-            android:shadowColor="@color/darkgoldenrod"
+            android:shadowColor="@color/cadetblue"
             android:shadowDx="4"
             android:shadowDy="4"
 
             android:shadowRadius="5"
             android:text="Fonda restaurante DONDE AIDE"
             android:textAlignment="center"
-            android:textSize="40dp"
+            android:textSize="20dp"
 
             android:textStyle="bold"
 
@@ -41,26 +43,57 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
+
+        <RatingBar
+            android:id="@+id/valoracionMoldeResta"
+            android:layout_width="239dp"
+            android:layout_height="40dp"
+            android:scaleX=".4"
+            android:scaleY=".4"
+
+            android:translationX="-50dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="52dp"
+
+            android:src="@drawable/favoritoiconoresta"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
         <ImageView
             android:id="@+id/imagenresta1"
-            android:layout_width="233dp"
-            android:layout_height="243dp"
+            android:layout_width="380dp"
+            android:layout_height="206dp"
 
             android:layout_marginBottom="240dp"
-            android:padding="5dp"
             android:scaleType="fitXY"
             android:src="@drawable/resta1"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nombreresta1"
             app:layout_constraintVertical_bias="0.0" />
 
+
         <TextView
             android:id="@+id/rangoprecio"
-            android:layout_width="181dp"
-            android:layout_height="50dp"
+            android:layout_width="108dp"
+            android:layout_height="31dp"
 
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
@@ -68,20 +101,20 @@
             android:paddingTop="14dp"
             android:text="Rango precio:"
             android:textAlignment="center"
-            android:textSize="14dp"
+            android:textSize="16dp"
             android:textStyle="bold"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.044"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imagenresta1"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/precios"
-            android:layout_width="159dp"
-            android:layout_height="47dp"
+            android:layout_width="136dp"
+            android:layout_height="38dp"
 
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
@@ -89,25 +122,24 @@
             android:paddingTop="14dp"
             android:text="Desde COP 26000"
             android:textAlignment="center"
-            android:textSize="14dp"
+            android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.755"
+            app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toEndOf="@id/rangoprecio"
             app:layout_constraintTop_toBottomOf="@id/imagenresta1"
-            app:layout_constraintVertical_bias="0.049" />
-
+            app:layout_constraintVertical_bias="0.071" />
 
         <TextView
             android:id="@+id/contactos"
-            android:layout_width="174dp"
-            android:layout_height="47dp"
+            android:layout_width="140dp"
+            android:layout_height="31dp"
 
             android:background="#00F0F8FF"
             android:paddingTop="14dp"
             android:text="Teléfonos:"
             android:textAlignment="center"
-            android:textSize="14dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,39 +150,43 @@
 
         <TextView
             android:id="@+id/numeroresta"
-            android:layout_width="137dp"
-            android:layout_height="43dp"
+            android:layout_width="94dp"
+            android:layout_height="34dp"
 
             android:layout_marginEnd="56dp"
             android:background="#00F0F8FF"
             android:paddingTop="14dp"
             android:text="3116026852"
             android:textAlignment="center"
-            android:textSize="14dp"
+            android:textSize="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.955"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/precios"
-            app:layout_constraintVertical_bias="0.116" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/platorecom"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="279dp"
+            android:layout_height="56dp"
 
+            android:layout_marginEnd="56dp"
             android:background="#00F0F8FF"
+            android:gravity="center"
+            android:padding="14dp"
             android:paddingStart="20dp"
-            android:paddingTop="14dp"
             android:text="Plato recomendado:"
             android:textAlignment="center"
             android:textSize="18dp"
+
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
 
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/contactos"
-            app:layout_constraintVertical_bias="0.141" />
+            app:layout_constraintVertical_bias="0.636" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

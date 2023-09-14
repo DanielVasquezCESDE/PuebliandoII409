@@ -37,6 +37,8 @@ public class AmpliadoHotel extends AppCompatActivity {
                 .apply(RequestOptions.bitmapTransform(new CircleCrop()))
                 .into(logoImageView);
 
+
+
         fotoHotelAmpliado = findViewById(R.id.logo);
         nombreHotelAmpliado = findViewById(R.id.nombrehotelampliado);
         precioHotelAmpliado = findViewById(R.id.preciohotelampliado);

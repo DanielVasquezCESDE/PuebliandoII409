@@ -9,17 +9,16 @@
 
 
     <ImageView
-        android:id="@+id/comentariohotel"
-        android:layout_width="327dp"
-        android:layout_height="151dp"
-        android:src="@drawable/comentarioiconodeampliando"
-
+        android:id="@+id/logo"
+        android:layout_width="304dp"
+        android:layout_height="206dp"
+        android:src="@drawable/ampliadohotel1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <RatingBar
         android:id="@+id/valorahotelampliado"
@@ -33,41 +32,28 @@
 
         app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
         app:layout_constraintEnd_toEndOf="@id/comentariohotel"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="@id/comentariohotel"
         app:layout_constraintTop_toTopOf="@id/comentariohotel"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:src="@drawable/usuarioiconoampliando"
+        android:id="@+id/comentariohotel"
+        android:layout_width="327dp"
+        android:layout_height="151dp"
+        android:src="@drawable/comentarioiconodeampliando"
 
-        app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
-        app:layout_constraintEnd_toEndOf="@id/comentariohotel"
-        app:layout_constraintHorizontal_bias="0.286"
-        app:layout_constraintStart_toStartOf="@id/comentariohotel"
-        app:layout_constraintTop_toTopOf="@id/comentariohotel"
-        app:layout_constraintVertical_bias="0.473" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Amanda"
-        android:textColor="@color/saddlebrown"
-        android:textSize="18dp"
-        android:textStyle="bold"
-
-        app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
-        app:layout_constraintEnd_toEndOf="@id/comentariohotel"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toStartOf="@id/comentariohotel"
-        app:layout_constraintTop_toTopOf="@id/comentariohotel"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
 
     <TextView
-        android:layout_width="138dp"
-        android:layout_height="82dp"
+        android:id="@+id/comentariotexto"
+        android:layout_width="107dp"
+        android:layout_height="83dp"
         android:padding="5dp"
         android:text="The view should be only big enough to enclose its content (plus padding)."
         android:textAlignment="center"
@@ -77,63 +63,89 @@
 
         app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
         app:layout_constraintEnd_toEndOf="@id/comentariohotel"
-        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintHorizontal_bias="0.663"
         app:layout_constraintStart_toStartOf="@id/comentariohotel"
         app:layout_constraintTop_toTopOf="@id/comentariohotel"
-        app:layout_constraintVertical_bias="0.768" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="183dp"
-        android:layout_height="153dp"
-        android:src="@drawable/ampliadohotel1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        android:id="@+id/usuarioAmpliadoHotel"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:src="@drawable/iconousuariocomentario"
+
+        app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
+        app:layout_constraintEnd_toEndOf="@id/comentariohotel"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="@id/comentariohotel"
+        app:layout_constraintTop_toTopOf="@id/comentariohotel"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <TextView
+        android:id="@+id/nombrecomentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amanda"
+        android:textColor="@color/saddlebrown"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/comentariohotel"
+        app:layout_constraintEnd_toEndOf="@id/comentariohotel"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="@id/comentariohotel"
+        app:layout_constraintTop_toTopOf="@id/comentariohotel"
+        app:layout_constraintVertical_bias="0.212" />
+
+
+
 
     <TextView
         android:id="@+id/nombrehotelampliado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Nombre"
+        android:padding="5dp"
 
+        android:text="Nombre"
         android:textColor="@color/white"
         android:textSize="30dp"
+
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
 
     <TextView
         android:id="@+id/preciohotelampliado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
+        android:layout_marginStart="168dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="precio"
-        android:textColor="@color/white"
+        android:textColor="@color/aliceblue"
 
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/descripcionAmpliH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintVertical_bias="0.157" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
         android:id="@+id/telefonohotelampliado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="252dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="telefono"
 
@@ -141,10 +153,12 @@
         android:textSize="30dp"
 
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
         android:id="@+id/descripcionAmpliH"
@@ -158,25 +172,24 @@
 
         app:layout_constraintBottom_toTopOf="@id/botonReservar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/telefonohotelampliado"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.835" />
 
     <Button
         android:id="@+id/botonReservar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="292dp"
         android:backgroundTint="@color/cadetblue"
 
         android:text="Reservar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/telefonohotelampliado" />
-    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

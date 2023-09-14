@@ -10,18 +10,18 @@ public class MoldeSitio implements Serializable {
     private String encargadoS;
     private String contacto;
     private String precioS;
-    private String descripS;
+    private Float valorS;
 
     public MoldeSitio() {
     }
 
-    public MoldeSitio(String nombreS, Integer fotoS, String encargadoS, String contacto, String precioS, String descripS) {
+    public MoldeSitio(String nombreS, Integer fotoS, String encargadoS, String contacto, String precioS, Float valorS) {
         this.nombreS = nombreS;
         this.fotoS = fotoS;
         this.encargadoS = encargadoS;
         this.contacto = contacto;
         this.precioS = precioS;
-        this.descripS = descripS;
+        this.valorS = valorS;
     }
 
     public String getNombreS() {
@@ -64,11 +64,11 @@ public class MoldeSitio implements Serializable {
         this.precioS = precioS;
     }
 
-    public String getDescripS() {
-        return descripS;
+    public Float getValorS() {
+        return valorS;
     }
 
-    public void setDescripS(String descripS) {
-        this.descripS = descripS;
+    public void setValorS(Float valorS) {
+        this.valorS = valorS;
     }
 }

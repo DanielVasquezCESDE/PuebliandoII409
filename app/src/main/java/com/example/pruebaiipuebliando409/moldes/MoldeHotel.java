@@ -8,7 +8,6 @@ public class MoldeHotel implements Serializable {
     private String tel;
     private Integer foto;
     private String descrip;
-
     private Float valoraH;
 
     public MoldeHotel() { //Constructor vacío

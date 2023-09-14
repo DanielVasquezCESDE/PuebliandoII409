@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -51,6 +52,7 @@ public class AdaptadorRestaurantes extends RecyclerView.Adapter<AdaptadorRestaur
         TextView precioRestaurante;
         TextView contactoRestaurante;
         TextView platoRestaurante;
+        RatingBar valorRestaurante;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -59,6 +61,7 @@ public class AdaptadorRestaurantes extends RecyclerView.Adapter<AdaptadorRestaur
             precioRestaurante = itemView.findViewById(R.id.precios);
             contactoRestaurante = itemView.findViewById(R.id.numeroresta);
             platoRestaurante = itemView.findViewById(R.id.platorecom);
+            valorRestaurante = itemView.findViewById(R.id.valoracionMoldeResta);
         }
 
         public void actualizarDatos(MoldeRestaurante moldeRestaurante) {
@@ -67,6 +70,7 @@ public class AdaptadorRestaurantes extends RecyclerView.Adapter<AdaptadorRestaur
             precioRestaurante.setText((moldeRestaurante.getPrecioR()));
             contactoRestaurante.setText(moldeRestaurante.getContactoR());
             platoRestaurante.setText(moldeRestaurante.getPlato());
+            valorRestaurante.setRating(moldeRestaurante.getValorR());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

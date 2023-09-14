@@ -8,18 +8,18 @@ public class MoldeRestaurante implements Serializable {
     private String precioR;
     private String contactoR;
     private String plato;
-    private String descripR;
+    private Float valorR;
 
     public MoldeRestaurante() {
     }
 
-    public MoldeRestaurante(String nombreR, Integer fotoR, String precioR, String contactoR, String plato, String descripR) {
+    public MoldeRestaurante(String nombreR, Integer fotoR, String precioR, String contactoR, String plato, Float valorR) {
         this.nombreR = nombreR;
         this.fotoR = fotoR;
         this.precioR = precioR;
         this.contactoR = contactoR;
         this.plato = plato;
-        this.descripR = descripR;
+        this.valorR = valorR;
     }
 
     public String getNombreR() {
@@ -62,11 +62,11 @@ public class MoldeRestaurante implements Serializable {
         this.plato = plato;
     }
 
-    public String getDescripR() {
-        return descripR;
+    public Float getValorR() {
+        return valorR;
     }
 
-    public void setDescripR(String descripR) {
-        this.descripR = descripR;
+    public void setValorR(Float valorR) {
+        this.valorR = valorR;
     }
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -51,6 +52,8 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
         TextView encargadoSitio;
         TextView contactoSitio;
         TextView precioSitio;
+        RatingBar valorSitio;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             nombreSitio = itemView.findViewById(R.id.nombresitioaquí);
@@ -58,7 +61,7 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             encargadoSitio = itemView.findViewById(R.id.nombrencargado);
             contactoSitio = itemView.findViewById(R.id.numeroEnc);
             precioSitio = itemView.findViewById(R.id.preciositio);
-
+            valorSitio = itemView.findViewById(R.id.valorMoldeSitio);
         }
 
         public void actualizarDatos(MoldeSitio moldeSitio) {
@@ -67,6 +70,7 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             encargadoSitio.setText((moldeSitio.getEncargadoS()));
             contactoSitio.setText(moldeSitio.getContacto());
             precioSitio.setText(moldeSitio.getPrecioS());
+            valorSitio.setRating(moldeSitio.getValorS());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ public class AmpliadoSitios extends AppCompatActivity {
     TextView nombreStiosAmpliado;
     TextView telefonoSitiosAmpliado;
     TextView precioSitiosAmpliado;
-    TextView descripSitioAmpliado;
+    RatingBar valorSitioAmpliado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,8 @@ public class AmpliadoSitios extends AppCompatActivity {
         nombreStiosAmpliado = findViewById(R.id.nombresitioA);
         telefonoSitiosAmpliado = findViewById(R.id.telefonositioA);
         precioSitiosAmpliado = findViewById(R.id.preciositioA);
-        descripSitioAmpliado = findViewById(R.id.descripcionsitioA);
+        valorSitioAmpliado = findViewById(R.id.valorampliadoSitios);
+
 
         moldeDelSitio = (MoldeSitio) getIntent().getSerializableExtra("datosSitios");
 
@@ -46,6 +48,6 @@ public class AmpliadoSitios extends AppCompatActivity {
         nombreStiosAmpliado.setText(moldeDelSitio.getNombreS());
         telefonoSitiosAmpliado.setText(moldeDelSitio.getContacto());
         precioSitiosAmpliado.setText(moldeDelSitio.getPrecioS());
-        descripSitioAmpliado.setText((moldeDelSitio.getDescripS()));
+        valorSitioAmpliado.setRating(moldeDelSitio.getValorS());
     }
 }
