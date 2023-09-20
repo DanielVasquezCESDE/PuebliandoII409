@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245349254609",
+    "project_id": "puebliandodvj",
+    "storage_bucket": "puebliandodvj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245349254609:android:fe9a0cedb3ff8a1054ccf0",
+        "android_client_info": {
+          "package_name": "com.example.pruebaiipuebliando409"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQBk9nW5wSDMZOAp38k6gNjruzDTS0OZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
