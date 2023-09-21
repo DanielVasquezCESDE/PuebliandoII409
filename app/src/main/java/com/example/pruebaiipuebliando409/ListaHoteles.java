@@ -1,14 +1,21 @@
 package com.example.pruebaiipuebliando409;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.pruebaiipuebliando409.adaptadores.AdaptadorHoteles;
 import com.example.pruebaiipuebliando409.adaptadores.AdaptadorSitios;
 import com.example.pruebaiipuebliando409.moldes.MoldeHotel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -18,6 +25,9 @@ public class ListaHoteles extends AppCompatActivity {
     //Estructura de un arreglo o lista dinámica en java:
     ArrayList<MoldeHotel> listaHoteles = new ArrayList<>();
     RecyclerView recyclerView;
+
+    //Inicializa una instancia de Cloud Firestore, un objeto de tipo database
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 /*
 //LO SIGUIENTE SE SUGIRIÓ POR CHAT GPT
     private RecyclerView recyclerViewHoteles;
@@ -32,17 +42,33 @@ public class ListaHoteles extends AppCompatActivity {
         recyclerView = findViewById((R.id.recyclerViewHoteles));
         //Se llama a un constructor de un layout, que va a ser de tipo lineal (Scroll vertical)
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));//Para que no active una lista dentro de otra
-/*
-//LO SIGUIENTE SE SUGIRIÓ POR CHAT GPT
-        recyclerViewHoteles = findViewById(R.id.recyclerViewHoteles);
-        listaHoteles = new ArrayList<>();// Aquí debes agregar tus datos de sitios a la lista
-        listaHoteles.add(new MoldeHotel("Hotel cabañal La Palma", "$5", "3005068890", R.drawable.hotelcabanialapalma));
-        listaHoteles.add(new MoldeHotel("Hotel Copamar", "$8", "3234543232", R.drawable.hotelcopamar));
 
 
-        adaptadorHoteles = new AdaptadorHoteles(listaHoteles);
-        recyclerViewHoteles.setLayoutManager(new LinearLayoutManager(this));
-        recyclerViewHoteles.setAdapter(adaptadorHoteles);*/
+        //Tabla hoteles (UNA COLECCIÓN EN BD NO RELACIONAL ES UNA TABLA)
+        //Va a buscar una colección en la nube que se llama hoteles
+        db.collection("hoteles")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override   //"Mientras termina lo llama"
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            //Pasa por cada registro o DOCUMENTO usando un ciclo
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                                    //Aquí se extrae el dato registro
+                                String nombreHotel = document.getString("nombre");
+                                String precioHotel = document.getString("precio");
+                                String telefonoHotel = document.getString("precio");
+
+                                Toast.makeText(ListaHoteles.this, nombreHotel+" $"+precioHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, telefonoHotel, Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            //Log.w(TAG, "Error getting documents.", task.getException());
+                        }
+                    }
+                });
+
+
         llenarListaConDatos();
         AdaptadorHoteles adaptadorHoteles = new AdaptadorHoteles(listaHoteles);
         recyclerView.setAdapter(adaptadorHoteles);
