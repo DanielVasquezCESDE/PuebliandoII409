@@ -28,14 +28,7 @@ public class AmpliadoHotel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ampliado_hotel);
-
-        //Aquí se usa la biblioteca Glide para cargar y redondear la imagen de manera lógica en un círculo.
-        ImageView logoImageView = findViewById(R.id.logo);
-        //Glide cargará la imagen X y la redondeará automáticamente en un círculo utilizando CircleCrop.
-        Glide.with(this)
-                .load(R.drawable.ampliadohotel1)
-                .apply(RequestOptions.bitmapTransform(new CircleCrop()))
-                .into(logoImageView);
+        
 
 
 

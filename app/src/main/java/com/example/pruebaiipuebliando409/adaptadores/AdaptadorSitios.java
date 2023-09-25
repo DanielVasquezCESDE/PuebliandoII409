@@ -51,7 +51,6 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
         ImageView fotoSitio;
         TextView encargadoSitio;
         TextView contactoSitio;
-        TextView precioSitio;
         RatingBar valorSitio;
 
         public viewHolder(@NonNull View itemView) {
@@ -60,7 +59,6 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             fotoSitio = itemView.findViewById(R.id.imagensitio);
             encargadoSitio = itemView.findViewById(R.id.nombrencargado);
             contactoSitio = itemView.findViewById(R.id.numeroEnc);
-            precioSitio = itemView.findViewById(R.id.preciositio);
             valorSitio = itemView.findViewById(R.id.valorMoldeSitio);
         }
 
@@ -69,7 +67,6 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             fotoSitio.setImageResource(moldeSitio.getFotoS());
             encargadoSitio.setText((moldeSitio.getEncargadoS()));
             contactoSitio.setText(moldeSitio.getContacto());
-            precioSitio.setText(moldeSitio.getPrecioS());
             valorSitio.setRating(moldeSitio.getValorS());
 
             itemView.setOnClickListener(new View.OnClickListener() {
