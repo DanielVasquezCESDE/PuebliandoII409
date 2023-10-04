@@ -47,4 +47,13 @@
     <string name="encargadositio">Guide</string>
     <string name="telsitio">Contact</string>
     <string name="desdesitio">Prices range from</string>
+
+    <string name="nombreHA">Hotel</string>
+    <string name="precioHA">Book from</string>
+    <string name="contactoHA">Contact:</string>
+
+    <string name="valorMolde">Rating:</string>
+
+    <string name="precioRA">Taste from</string>
+    <string name="contactoRA">Contact:</string>
 </resources>

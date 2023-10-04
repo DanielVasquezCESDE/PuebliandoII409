@@ -44,4 +44,14 @@
     <string name="encargadositio">Persona encargada</string>
     <string name="telsitio">Contacto</string>
     <string name="desdesitio">Desde</string>
+
+    <string name="nombreHA">Hotel</string>
+    <string name="precioHA">A partir de</string>
+    <string name="contactoHA">Contactar:</string>
+
+    <string name="valorMolde">Classificação:</string>
+
+    <string name="precioRA">Prove a partir</string>
+    <string name="contactoRA">Contactar:</string>
+
 </resources>

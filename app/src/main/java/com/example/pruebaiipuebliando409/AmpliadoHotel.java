@@ -21,8 +21,9 @@ public class AmpliadoHotel extends AppCompatActivity {
     TextView precioHotelAmpliado;
     TextView telefonoHotelAmpliado;
     TextView descripHotelAmpliado;
-
     RatingBar valoraHotelAmpliado;
+    TextView comentarioHotelAmp;
+    TextView usercomentaHotelAmp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class AmpliadoHotel extends AppCompatActivity {
         telefonoHotelAmpliado = findViewById(R.id.telefonohotelampliado);
         descripHotelAmpliado = findViewById(R.id.descripcionAmpliH);
         valoraHotelAmpliado = findViewById(R.id.valorahotelampliado);
+        comentarioHotelAmp = findViewById(R.id.comentariotexto);
+        usercomentaHotelAmp = findViewById(R.id.nombreUser);
 
 
         //La clase que mandamos
@@ -50,5 +53,7 @@ public class AmpliadoHotel extends AppCompatActivity {
         telefonoHotelAmpliado.setText(moldeDelHotel.getTel());
         descripHotelAmpliado.setText(moldeDelHotel.getDescrip());
         valoraHotelAmpliado.setRating(moldeDelHotel.getValoraH());
+        comentarioHotelAmp.setText(moldeDelHotel.getComentarioH());
+        usercomentaHotelAmp.setText(moldeDelHotel.getNombreUserH());
     }
 }

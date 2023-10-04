@@ -10,6 +10,7 @@ public class MoldeRestaurante implements Serializable {
     private String plato;
     private Float valorR;
 
+
     public MoldeRestaurante() {
     }
 

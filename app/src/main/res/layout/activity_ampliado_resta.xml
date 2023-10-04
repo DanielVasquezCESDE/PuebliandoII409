@@ -28,11 +28,29 @@
         android:layout_width="289dp"
         android:layout_height="340dp"
         android:src="@drawable/imagenampliandoresta"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.291" />
+
+    <TextView
+        android:id="@+id/contactoString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/contactoRA"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
 
     <TextView
         android:id="@+id/telefonoRESTAampliado"
@@ -44,10 +62,12 @@
         android:textSize="35dp"
         android:textStyle="bold"
 
-        app:layout_constraintBottom_toTopOf="@id/botonReservarRESTA"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precioRESTAampliado" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
 
     <TextView
         android:id="@+id/precioRESTAampliado"
@@ -59,57 +79,80 @@
         android:textSize="35dp"
         android:textStyle="bold"
 
-        app:layout_constraintBottom_toTopOf="@id/telefonoRESTAampliado"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombreRESTAampliado" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/precioString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/precioRA"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+
 
     <TextView
         android:id="@+id/nombreRESTAampliado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="@color/darkgoldenrod"
+        android:shadowDx="23"
+        android:shadowRadius="30"
         android:text="Nombre"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="45dp"
         android:textStyle="bold"
 
 
-        app:layout_constraintBottom_toTopOf="@id/precioRESTAampliado"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo2"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
     <TextView
         android:id="@+id/descripcionAmpliRESTA"
         android:layout_width="354dp"
         android:layout_height="107dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="332dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         android:textColor="@color/lightblue"
         android:textSize="17dp"
 
 
-        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/telefonoRESTAampliado" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
 
     <Button
         android:id="@+id/botonReservarRESTA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="464dp"
         android:backgroundTint="@color/goldenrod"
 
         android:text="Reservar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/telefonoRESTAampliado" />
 

@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.323" />
 
     <TextView
-        android:id="@+id/nombrecomentario"
+        android:id="@+id/nombreUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amanda"
@@ -108,7 +108,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="3dp"
 
-        android:text="Hotel"
+        android:text="@string/nombreHA"
         android:textColor="@color/white"
         android:textSize="33dp"
 
@@ -150,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Desde"
+        android:text="@string/precioHA"
         android:textColor="@color/aliceblue"
 
         android:textSize="30dp"
@@ -171,6 +171,8 @@
         android:text="precio"
         android:textColor="@color/aliceblue"
         android:textAlignment="center"
+        android:shadowRadius="30"
+        android:shadowColor="@color/aliceblue"
 
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -187,7 +189,7 @@
         android:layout_marginStart="252dp"
         android:layout_marginTop="84dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Contacto"
+        android:text="@string/contactoHA"
 
         android:textColor="@color/white"
         android:textSize="30dp"
@@ -209,6 +211,8 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="telefono"
         android:textAlignment="center"
+        android:shadowRadius="30"
+        android:shadowColor="@color/aliceblue"
 
         android:textColor="@color/white"
         android:textSize="20dp"
