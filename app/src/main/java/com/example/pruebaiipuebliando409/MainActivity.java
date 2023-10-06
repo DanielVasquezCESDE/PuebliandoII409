@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         Timer lapso = new Timer();
-        lapso.schedule(arranque,8000);
+        lapso.schedule(arranque,4000);
     }
 }

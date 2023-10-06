@@ -62,11 +62,11 @@ public class ListaRestaurantes extends AppCompatActivity {
     }
     public void llenarListaConDatos () {
 
-        listaRestaurantes.add(new MoldeRestaurante("Donde aide", R.drawable.platoasados, "$26000", "3005698989", "Asado tradicional",  4.2f));
-        listaRestaurantes.add(new MoldeRestaurante("Parador Santa Rosa", R.drawable.platocazuela, "$31000", "3005698989", "Cazuela sencilla", 4.6f));
-        listaRestaurantes.add(new MoldeRestaurante("Fonda y Pesebrera La Mazorca", R.drawable.platochorizo, "$14000", "3005698989", "Choriza de la casa", 4.4f));
-        listaRestaurantes.add(new MoldeRestaurante("Restaurante Bar La Portada", R.drawable.platomondongo, "$34000", "3005698989", "Mondongo completo", 3.8f));
-        listaRestaurantes.add(new MoldeRestaurante("Restaurante Meraki", R.drawable.platotilapia, "$27000", "3005698989", "Tilapia", 4.1f));
+        listaRestaurantes.add(new MoldeRestaurante("Donde aide", R.drawable.resta_aide, "$26000", "3005698989", "Asado tradicional",  4.2f));
+        listaRestaurantes.add(new MoldeRestaurante("Parador Santa Rosa", R.drawable.resta_strosa, "$31000", "3005698989", "Cazuela sencilla", 4.6f));
+        listaRestaurantes.add(new MoldeRestaurante("Fonda y Pesebrera La Mazorca", R.drawable.resta_mazorca, "$14000", "3005698989", "Choriza de la casa", 4.4f));
+        listaRestaurantes.add(new MoldeRestaurante("Restaurante Bar La Portada", R.drawable.resta_portada, "$34000", "3005698989", "Mondongo completo", 3.8f));
+        listaRestaurantes.add(new MoldeRestaurante("Restaurante Meraki", R.drawable.resta_rancherito, "$27000", "3005698989", "Tilapia", 4.1f));
 
     }
 }
